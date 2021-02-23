@@ -54,12 +54,12 @@ function results() {
         compScore.textContent = userCount;
     }
     else if (computerChoice === 'rock' && userChoice === 'paper') {
-        resultMessage.textContent = ("paper beats rock! you won!");
+        resultMessage.textContent = ("paper beats rock, you won!");
         userCount++;
         userScore.textContent = userCount;
       } 
     else if (computerChoice === 'rock' && userChoice === 'scissors') {
-        resultMessage.textContent = ("rock beats scissors!, you lost! ");
+        resultMessage.textContent = ("rock beats scissors, you lost! ");
         compCount++;
         compScore.textContent = compCount;
       }
