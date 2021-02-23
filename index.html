@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock-Paper-Scissors</title>
+  <!-- styles -->
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Potta+One&family=Roboto:wght@500&display=swap" rel="stylesheet">
+<!--
+  <a href="https://www.vecteezy.com/free-vector/cartoon">Cartoon Vectors by Vecteezy</a>
+-->
+  
+   
+</head>
+
+<body>
+
+  <main>
+    <header>
+        <h1>Rock Paper Scissors!</h1>
+    </header>
+    <section class="scoreboard">
+        <div class="score">
+            <span id="user-score">0</span>
+            <span class="seperator">:</span>
+            <span id="computer-score">0</span>
+        </div>
+    </section>
+    <span class="reaction">Let's Begin! Pick you poison</span>
+    <div id=computer-choice></div>
+    <div class="button-container">
+        <button class="option" id="rock"></button>
+        <button class="option" id="paper"></button>
+        <button class="option" id="scissor"></button>
+    </div>
+
+  </main>
+      <!-- javascript -->
+  <script type="text/javascript" src="app.js" charset="UTF-8"></script>
+</body>
+</html>
