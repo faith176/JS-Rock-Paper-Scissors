@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rock-Paper-Scissors</title>
+  <title>Rock Paper Scissors</title>
   <!-- styles -->
   <link rel="stylesheet" type="text/css" href="styles.css" />
 
@@ -16,14 +16,14 @@
   
    
 </head>
-
 <body>
-
   <main>
     <header>
         <h1>Rock Paper Scissors</h1>
     </header>
+    <span class="vs">Computer VS You</span>
     <section class="container">
+
     <section class="scoreboard">
         <div class="score">
             <span class="score_type" id="user-score">0</span>
@@ -31,15 +31,22 @@
             <span class="score_type" id="computer-score">0</span>
         </div>
     </section>
-    <span class="reaction">Let's Begin! Rock Paper Scissors</span>
-    <div id=computer-choice></div>
+
+    <span class="reaction">Let's Begin! Rock Paper Scissors!</span>
+    <section class="img-container">
+      <div class="option choice" id=computer-choice></div>
+      <span class="seperator" id="img-seperator">vs</span>
+      <div class="option choice" id="user-choice"></div>
+  </section>
+
+  <span class="choices-wording">Make Your Choice</span>
     <div class="button-container">
         <button class="option" id="rock"></button>
         <button class="option" id="paper"></button>
         <button class="option" id="scissor"></button>
     </div>
-  </section>
 
+  </section>
   </main>
       <!-- javascript -->
   <script type="text/javascript" src="app.js" charset="UTF-8"></script>

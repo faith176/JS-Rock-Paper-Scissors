@@ -19,6 +19,15 @@ const resultMessage = document.querySelector('.reaction');
 
 //stores the computer's decision
 const decision = document.querySelector('#computer-choice');
+//image to correspond to the computer's decision 
+let img = "url('icons/rock2.png')";
+
+//stores the user's decision
+const decisionUser = document.querySelector('#user-choice');
+
+//image to correspond to the user's decision
+let imgUser = "url('icons/rock2.png')";
+
 
 
 
@@ -33,15 +42,18 @@ function computerDecision() {
     random();
     if (randomNum < 0.34) {
         computerChoice = "rock";
+        img = "url('icons/rock2.png')";
     } else if(randomNum <= 0.67) {
         computerChoice = "paper";
+        img = "url('icons/paper2.png')";
     } else {
         computerChoice = "scissors";
+        img = "url('icons/scissor2.png')";
     }
     console.log("computer picked " + computerChoice);
 
-    //adds the proper png to the screen
-    // decision.style.backgroundImage = ;
+    //adds the proper png to the screen for computer's decision
+    decision.style.backgroundImage = img;
 }
 
 //displays the appropriate results message for each individual outcome
@@ -95,6 +107,9 @@ function results() {
   rock.addEventListener("click", function () {
     console.log("player picked rock");
     userChoice= "rock";
+    imgUser = "url('icons/rock2.png')";
+    //adds the proper png to the screen for user's decision
+    decisionUser.style.backgroundImage = imgUser;
     computerDecision();
     results();
   });
@@ -103,6 +118,9 @@ function results() {
   paper.addEventListener("click", function () {
     console.log("player picked paper");
     userChoice= "paper";
+    imgUser = "url('icons/paper2.png')";
+    //adds the proper png to the screen for user's decision
+    decisionUser.style.backgroundImage = imgUser;
     computerDecision();
     results();
   });
@@ -111,6 +129,9 @@ function results() {
   scissors.addEventListener("click", function () {
     console.log("player picked scissors");
     userChoice= "scissors";
+    imgUser = "url('icons/scissor2.png')";
+    //adds the proper png to the screen for user's decision
+    decisionUser.style.backgroundImage = imgUser;
     computerDecision();
     results();
   });

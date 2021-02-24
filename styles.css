@@ -7,14 +7,16 @@ body {
     background:rgba(255,250,253);
 }
 
-
 main{
     justify-content:center;
     text-align: center;
 }
 
-
-
+.vs{
+    text-align: center;
+    position: static;
+    left:30px;
+}
 
 /*
 ===============
@@ -35,7 +37,7 @@ scoreboard
 .reaction {
     display:flex;
     justify-content: center;
-    margin:30px;
+    margin:20px;
     font-size: 35px;
 }
 
@@ -52,14 +54,40 @@ scoreboard
 
 /*
 ===============
+Choices
+===============
+*/
+
+.img-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#img-seperator{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.choice{
+    background-image:url('icons/rock2.png');
+    border-radius:40%;
+    background-size:contain;
+    display: inline-block;
+}
+
+/*
+===============
 rock,paper,scissor buttons
 ===============
 */
 
-
+.choices-wording{
+    position: static;
+}
 
 .button-container{
-
+    margin: 5px;
 }
 
 .option{
@@ -73,7 +101,6 @@ rock,paper,scissor buttons
 
 #rock {
     background-image:url('icons/rock2.png');
-    /* background-position: 100px; */
     border-radius:40%;
     background-size:cover;
 }
@@ -81,7 +108,6 @@ rock,paper,scissor buttons
 
 #paper {
     background-image:url('icons/paper2.png');
-    /* background-position: 100px; */
     border-radius:20%;
     background-size:contain;
     /* overides to fit positioning for scissors*/
@@ -92,7 +118,6 @@ rock,paper,scissor buttons
 
 #scissor {
     background-image:url('icons/scissor2.png');
-    /* background-position: 100px; */
     border-radius:40%;
     background-position: 15px;
     /* overides to fit positioning for scissors*/
