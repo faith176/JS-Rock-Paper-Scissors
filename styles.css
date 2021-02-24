@@ -8,6 +8,12 @@ body {
 }
 
 
+main{
+    justify-content:center;
+    text-align: center;
+}
+
+
 
 
 /*
@@ -49,6 +55,13 @@ scoreboard
 rock,paper,scissor buttons
 ===============
 */
+
+
+
+.button-container{
+
+}
+
 .option{
     background-repeat:no-repeat;
     cursor: pointer;

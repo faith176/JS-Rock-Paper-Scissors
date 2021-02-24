@@ -28,7 +28,7 @@ function random() {
 }
 
 
-
+//has the computer randomly pick between rock, paper, and scissors
 function computerDecision() {
     random();
     if (randomNum < 0.34) {
@@ -44,7 +44,7 @@ function computerDecision() {
     // decision.style.backgroundImage = ;
 }
 
-
+//displays the appropriate results message for each individual outcome
 function results() {
     if (computerChoice == userChoice) {
         resultMessage.textContent = ("It was a tie, both get points!");
@@ -89,7 +89,9 @@ function results() {
 
 
 
-  //checks to see which button was pressed
+  //Event listeners to check which button was pressed
+
+  //handles if the rock button was pressed
   rock.addEventListener("click", function () {
     console.log("player picked rock");
     userChoice= "rock";
@@ -97,6 +99,7 @@ function results() {
     results();
   });
 
+//handles if the paper button was pressed
   paper.addEventListener("click", function () {
     console.log("player picked paper");
     userChoice= "paper";
@@ -104,6 +107,7 @@ function results() {
     results();
   });
 
+  //handles if the scissors button was pressed
   scissors.addEventListener("click", function () {
     console.log("player picked scissors");
     userChoice= "scissors";
