@@ -2,8 +2,8 @@ body {
     display:flex;
     align-items:center;
     justify-content:center;
-    /* background:#FBF3F3; */
-    background:rgba(255,250,253,0.55);
+    background:#fffafd;
+    /* background:rgba(255,250,253,0.55); */
 }
 
 main{
@@ -15,7 +15,8 @@ main{
     text-align: center;
     position: static;
     font-size:30px;
-    margin-right: 35px;
+    /* margin-right: 70px; */
+    margin-right: 40px;
 }
 
 /*
@@ -33,7 +34,7 @@ scoreboard
     justify-content: center;
     border-radius: 25px;
     height:100px;
-    width:100%;
+    width:500px;
 }
 
 
