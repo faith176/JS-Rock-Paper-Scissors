@@ -66,32 +66,32 @@ function results() {
         compScore.textContent = compCount;
     }
     else if (computerChoice === 'rock' && userChoice === 'paper') {
-        resultMessage.textContent = ("paper beats rock, you won!");
+        resultMessage.textContent = ("Paper beats Rock, you won!");
         userCount++;
         userScore.textContent = userCount;
       } 
     else if (computerChoice === 'rock' && userChoice === 'scissors') {
-        resultMessage.textContent = ("rock beats scissors, you lost! ");
+        resultMessage.textContent = ("Rock beats Scissors, you lost! ");
         compCount++;
         compScore.textContent = compCount;
       }
     else if (computerChoice === 'paper' && userChoice === 'rock') {
-        resultMessage.textContent = ("paper beats rock, you lost!");
+        resultMessage.textContent = ("Paper beats Rock, you lost!");
         compCount++;
         compScore.textContent = compCount;
       } 
     else if (computerChoice === 'paper' && userChoice === 'scissors') {
-        resultMessage.textContent = ("scissors beats paper, you won!");
+        resultMessage.textContent = ("Scissors beats Paper, you won!");
         userCount++;
         userScore.textContent = userCount;
       } 
     else if (computerChoice === 'scissors' && userChoice === 'rock') {
-        resultMessage.textContent = ("rock beats scissors, you won!");
+        resultMessage.textContent = ("Rock beats Scissors, you won!");
         userCount++;
         userScore.textContent = userCount;
       } 
     else if (computerChoice === 'scissors' && userChoice === 'paper') {
-        resultMessage.textContent = ("scissors beats paper, you lost!");
+        resultMessage.textContent = ("Scissors beats Paper, you lost!");
         compCount++;
         compScore.textContent = compCount;
       }
