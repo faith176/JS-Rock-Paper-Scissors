@@ -3,7 +3,6 @@ body {
     align-items:center;
     justify-content:center;
     background:#fffafd;
-    /* background:rgba(255,250,253,0.55); */
 }
 
 main{
@@ -13,10 +12,8 @@ main{
 
 .vs{
     text-align: center;
-    position: static;
     font-size:30px;
-    /* margin-right: 70px; */
-    margin-right: 40px;
+    margin-right: 85px;
 }
 
 /*
@@ -43,6 +40,7 @@ scoreboard
     justify-content: center;
     margin:20px;
     font-size: 35px;
+    font-weight: bold;
 }
 
 .score_type{
@@ -64,6 +62,8 @@ Choices
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 50px;
 }
 #img-seperator{
     margin-right: 20px;
@@ -85,6 +85,7 @@ rock,paper,scissor buttons
 .choices-wording{
     position: static;
     font-size: 120%;
+    margin-right:50px;
 }
 
 .button-container{
