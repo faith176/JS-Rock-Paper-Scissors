@@ -76,7 +76,7 @@ function results() {
         compScore.textContent = compCount;
       }
     else if (computerChoice === 'paper' && userChoice === 'rock') {
-        resultMessage.textContent = ("rock beats paper, you lost!");
+        resultMessage.textContent = ("paper beats rock, you lost!");
         compCount++;
         compScore.textContent = compCount;
       } 
